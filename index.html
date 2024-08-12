@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Usage Tracker</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+        }
+        form {
+            margin-bottom: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <h1>App Usage Tracker</h1>
+    <form id="app-form">
+        <label for="app-name">App Name:</label>
+        <input type="text" id="app-name" required>
+        <label for="app-alternative">Alternative:</label>
+        <input type="text" id="app-alternative" required>
+        <button type="submit">Add App</button>
+    </form>
+    <table>
+        <thead>
+            <tr>
+                <th>App Name</th>
+                <th>Alternative</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody id="app-list">
+            <!-- Dynamic content will be inserted here -->
+        </tbody>
+    </table>
+    <script src="script.js"></script>
+</body>
+</html>
